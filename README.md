@@ -1,1 +1,1 @@
-# mijin-gwak.github.io
+remote_theme: whiteglass
