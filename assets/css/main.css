@@ -3276,8 +3276,7 @@ input, select, textarea {
 		@media screen and (max-width: 768px) {
 
 			#wrapper > .bg {
-				background-size: contain;
-				height: 100vh;
+				background-size: cover;
 			}
 
 		}
