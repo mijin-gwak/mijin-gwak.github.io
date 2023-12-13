@@ -3277,6 +3277,7 @@ input, select, textarea {
 
 			#wrapper > .bg {
 				background-size: contain;
+				height: 100vh;
 			}
 
 		}
