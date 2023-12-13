@@ -3273,10 +3273,10 @@ input, select, textarea {
 			opacity: 1;
 		}
 
-		@media screen and (orientation: portrait) {
+		@media screen and (max-width: 768px) {
 
 			#wrapper > .bg {
-				background-size: auto,								auto,														auto 175%;
+				background-size: contain;
 			}
 
 		}
