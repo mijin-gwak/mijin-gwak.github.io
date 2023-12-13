@@ -3102,24 +3102,15 @@ input, select, textarea {
 /* Pagination */
 
 .pagination {
-    display: -moz-inline-flex;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flex;
-    display: inline-flex;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    cursor: default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
-    margin: 0 0 2rem 2px;
+    margin: 0;
     padding: 0;
 }
 
 .pagination a, .pagination span {
-    -moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-    -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-    -ms-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
     transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
     border: solid 2px;
     display: inline-block;
@@ -3129,7 +3120,7 @@ input, select, textarea {
     height: 3rem;
     letter-spacing: 0.075em;
     line-height: calc(3rem - 4px);
-    margin-left: -2px;
+    margin: 0 0.5rem; /* Adjust margin for spacing between pagination items */
     min-width: 3rem;
     position: relative;
     text-align: center;
@@ -3170,7 +3161,7 @@ input, select, textarea {
 }
 
 @media screen and (max-width: 980px) {
-    .pagination a, .pagination span {
+    .pagination a {
         font-size: 0.9rem;
     }
 
@@ -3189,11 +3180,8 @@ input, select, textarea {
     }
 }
 
-.pagination a, .pagination span {
-    border-color: #eeeeee;
-}
-
 .pagination a {
+    border-color: #eeeeee;
     color: #212931 !important;
 }
 
@@ -3212,9 +3200,6 @@ input, select, textarea {
     background-color: #eeeeee;
 }
 
-.pagination span {
-    color: #eeeeee;
-}
 
 /* Wrapper */
 
